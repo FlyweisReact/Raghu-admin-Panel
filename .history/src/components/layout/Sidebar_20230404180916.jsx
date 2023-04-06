@@ -11,7 +11,7 @@ const Sidebar = ({ hamb, setHamb }) => {
 
   const nav = [
     {
-      icon: <i class="fa-sharp fa-regular fa-grid-horizontal"></i>,
+      icon: <i class="fa-regular fa-grid-horizontal"></i>,
       link: "/dashboard",
       name: "Dashboard",
     },
@@ -51,11 +51,6 @@ const Sidebar = ({ hamb, setHamb }) => {
       icon: <i className="fa-solid fa-book-open-reader"></i>,
       link: "/experts",
       name: "Experts",
-    },
-    {
-      icon: <i className="fa-solid fa-book-open-reader"></i>,
-      link: "/coupon",
-      name: "Coupon's",
     },
     {
       icon: <i className="fa-solid fa-book-open-reader"></i>,

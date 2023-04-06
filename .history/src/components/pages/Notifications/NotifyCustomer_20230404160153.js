@@ -413,14 +413,7 @@ const NotifyCustomer = () => {
 
 
     const deleteHandler = async (id) => {
-      try{
-        const { data } = await axios.delete(`https://52pv9t2fl3.execute-api.ap-south-1.amazonaws.com/dev/api/v1/course/delete/${id}`)
-        console.log(data)
-        fetch()
-        toast.success("Deleted")
-      }catch(e){
-        console.log(e)
-      }
+      
     }
 
     return (
@@ -446,7 +439,6 @@ const NotifyCustomer = () => {
                   <Button
                     variant="outline-danger"
                     style={{ width: "320px", marginBottom: "10px" }}
-                    onClick={() => deleteHandler(i._id)}
                   >
                     Delete
                   </Button>
@@ -463,8 +455,6 @@ const NotifyCustomer = () => {
   function AddSection(props) {
     const [section, setSection] = useState("");
     const [video, setVideo] = useState("");
-    const [name , setName ] = useState("")
-    const [ link , setLink ] = useState("")
 
     const Post = async (e) => {
       e.preventDefault();
@@ -476,9 +466,6 @@ const NotifyCustomer = () => {
             video,
             level: id,
             main: mainId,
-            name
-            ,
-            link
           }
         );
         console.log(data);
@@ -514,20 +501,6 @@ const NotifyCustomer = () => {
               <Form.Control
                 type="text"
                 onChange={(e) => setVideo(e.target.value)}
-              />
-            </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Resources Title</Form.Label>
-              <Form.Control
-                type="text"
-                onChange={(e) => setName(e.target.value)}
-              />
-            </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Resources Link</Form.Label>
-              <Form.Control
-                type="text"
-                onChange={(e) => setLink(e.target.value)}
               />
             </Form.Group>
             <Button type="submit">Submit</Button>

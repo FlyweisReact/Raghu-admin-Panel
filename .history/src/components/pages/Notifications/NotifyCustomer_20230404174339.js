@@ -463,8 +463,7 @@ const NotifyCustomer = () => {
   function AddSection(props) {
     const [section, setSection] = useState("");
     const [video, setVideo] = useState("");
-    const [name , setName ] = useState("")
-    const [ link , setLink ] = useState("")
+    const [name , set ] = useState("")
 
     const Post = async (e) => {
       e.preventDefault();
@@ -477,8 +476,6 @@ const NotifyCustomer = () => {
             level: id,
             main: mainId,
             name
-            ,
-            link
           }
         );
         console.log(data);
@@ -520,14 +517,14 @@ const NotifyCustomer = () => {
               <Form.Label>Resources Title</Form.Label>
               <Form.Control
                 type="text"
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => setResources(e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Resources Link</Form.Label>
               <Form.Control
                 type="text"
-                onChange={(e) => setLink(e.target.value)}
+                onChange={(e) => setResources(e.target.value)}
               />
             </Form.Group>
             <Button type="submit">Submit</Button>

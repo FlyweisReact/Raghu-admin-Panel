@@ -520,14 +520,14 @@ const NotifyCustomer = () => {
               <Form.Label>Resources Title</Form.Label>
               <Form.Control
                 type="text"
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => setResources(e.target.value)}
               />
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Resources Link</Form.Label>
               <Form.Control
                 type="text"
-                onChange={(e) => setLink(e.target.value)}
+                onChange={(e) => setResources(e.target.value)}
               />
             </Form.Group>
             <Button type="submit">Submit</Button>

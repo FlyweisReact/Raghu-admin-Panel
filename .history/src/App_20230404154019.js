@@ -18,7 +18,6 @@ import Expert from "./components/pages/Expert";
 import CourseRegister from "./components/pages/CourseRegister";
 import TrendingCourse from "./components/pages/TrendingCourse";
 import CustomerCourses from "./components/pages/CustomerCourses";
-import Coupons from "./components/pages/Coupons";
 
 function App() {
   return (
@@ -40,7 +39,6 @@ function App() {
         <Route path="/CourseRegister" element={<CourseRegister />} />
         <Route path="/trendingCourse" element={<TrendingCourse />} />
         <Route path="/customer/courses/:id" element={<CustomerCourses />} />
-        <Route path="/coupon" element={<Coupons />} />
        </Routes>
     </>
   );

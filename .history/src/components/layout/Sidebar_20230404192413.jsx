@@ -54,11 +54,6 @@ const Sidebar = ({ hamb, setHamb }) => {
     },
     {
       icon: <i className="fa-solid fa-book-open-reader"></i>,
-      link: "/coupon",
-      name: "Coupon's",
-    },
-    {
-      icon: <i className="fa-solid fa-book-open-reader"></i>,
       link: "/trendingCourse",
       name: "Trending Course",
     },
@@ -90,7 +85,7 @@ const Sidebar = ({ hamb, setHamb }) => {
       <div
         className="p-4"
         style={{
-          backgroundColor: "#263544",
+          backgroundColor: "",
           minHeight: "100vh",
         }}
       >

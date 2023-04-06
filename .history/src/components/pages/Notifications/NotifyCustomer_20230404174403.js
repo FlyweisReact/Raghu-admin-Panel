@@ -527,7 +527,7 @@ const NotifyCustomer = () => {
               <Form.Label>Resources Link</Form.Label>
               <Form.Control
                 type="text"
-                onChange={(e) => setLink(e.target.value)}
+                onChange={(e) => setResources(e.target.value)}
               />
             </Form.Group>
             <Button type="submit">Submit</Button>

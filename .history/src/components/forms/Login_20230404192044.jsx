@@ -37,11 +37,10 @@ const Login = () => {
 
   return (
     <>
-      <div className="w-full h-screen flex flex-col justify-center items-center" style={{background  :'#6610f2'}} >
+      <div className="w-full h-screen flex flex-col justify-center items-center">
         <Form
-          className="w-96 mx-3 sm:mx-0 sm:w-4/5 md:w-4/6 lg:w-4/5 xl:w-1/2 flex flex-col items-center bg-white p-5 md:py-10 rounded-tl-3xl"
+          className="shadow-2xl w-96 mx-3 sm:mx-0 sm:w-4/5 md:w-4/6 lg:w-4/5 xl:w-1/2 flex flex-col items-center bg-white p-5 md:py-10 rounded-tl-3xl rounded-br-3xl"
           onSubmit={login}
-          style={{borderRadius : '0px'}}
         >
           <span className="text-4xl  text-center text-[#6610f2]">
             Admin Panel

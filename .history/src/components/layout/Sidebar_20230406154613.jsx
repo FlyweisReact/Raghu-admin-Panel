@@ -55,7 +55,7 @@ const Sidebar = ({ hamb, setHamb }) => {
     {
       icon: <i className="fa-solid fa-book-open-reader"></i>,
       link: "/coupon",
-      name: "Coupon's",
+      name: "Experts",
     },
     {
       icon: <i className="fa-solid fa-book-open-reader"></i>,
