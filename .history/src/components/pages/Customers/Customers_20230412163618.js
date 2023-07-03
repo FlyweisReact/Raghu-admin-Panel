@@ -73,7 +73,7 @@ const Customers = () => {
                 <th> Phone Number </th>
                 <th>Email Address</th>
                 <th>Courses</th>
-                <th>Start Date</th>
+                <th>Courses</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -90,7 +90,6 @@ const Customers = () => {
                   <Button variant="outline-info">View</Button>
                   </Link>
                   </td>
-                  <td>Static </td>
                   <td>
                     <AiFillDelete
                       color="red"

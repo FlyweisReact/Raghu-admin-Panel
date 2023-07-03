@@ -21,6 +21,7 @@ const Customers = () => {
       const { data } = await axios.get(
         "https://52pv9t2fl3.execute-api.ap-south-1.amazonaws.com/dev/api/v1/user/all"
       );
+      console.log(data)
       setData(data);
     } catch (err) {
       console.log(err);
@@ -73,7 +74,6 @@ const Customers = () => {
                 <th> Phone Number </th>
                 <th>Email Address</th>
                 <th>Courses</th>
-                <th>Start Date</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -90,7 +90,6 @@ const Customers = () => {
                   <Button variant="outline-info">View</Button>
                   </Link>
                   </td>
-                  <td>Static </td>
                   <td>
                     <AiFillDelete
                       color="red"

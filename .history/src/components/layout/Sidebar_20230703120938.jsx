@@ -62,16 +62,16 @@ const Sidebar = ({ hamb, setHamb }) => {
       link: "/trendingCourse",
       name: "Trending Course",
     },
-    // {
-    //   icon: <i className="fa-solid fa-book-open-reader"></i>,
-    //   link: "/terms",
-    //   name: "Terms&Condition",
-    // },
-    // {
-    //   icon: <i className="fa-solid fa-book-open-reader"></i>,
-    //   link: "/privacy",
-    //   name: "Privacy Policy",
-    // },
+    {
+      icon: <i className="fa-solid fa-book-open-reader"></i>,
+      link: "/terms",
+      name: "Terms&Condition",
+    },
+    {
+      icon: <i className="fa-solid fa-book-open-reader"></i>,
+      link: "/privacy",
+      name: "Privacy Policy",
+    },
     // {
     //   icon: <i className="fa-solid fa-book-open-reader"></i>,
     //   link: "/help",
